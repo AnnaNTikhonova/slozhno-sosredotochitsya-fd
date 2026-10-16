@@ -10,10 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-background-image: url("/images/cover-image-light.png");
-  --page-background-color: #FFC2E6;
+  --page-background-color: #FFF1F7;
   --accent-color: #FF8DCB;
   --subtitle-color: #353430;
   --section-title-color:#353430;
+  --button-color: #353430;
   --title-color: #FFC2E6;
   --cards-text-color: #353430;
   --cards-title-color: #353430;
@@ -23,10 +24,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --page-background-image: url("/images/cover-image-light.png");
-    --page-background-color: #FFC2E6;
+    --page-background-color: #FFF1F7;
     --accent-color: #FF8DCB;
     --subtitle-color: #353430;
     --section-title-color:#353430;
+    --button-color: #353430;
     --title-color: #FFC2E6;
     --cards-text-color: #353430;
     --cards-title-color: #353430;
