@@ -16,6 +16,8 @@
   min-height: 668px;
   display: grid;
   align-items: center;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
 }
 
 .header::before {
@@ -68,9 +70,10 @@
 }
 
 .header__theme-menu {
-  position: absolute;
-  top: 75px;
-  right: 9.5px;
+  justify-self: end;
+  align-self: start;
+  padding-right: 9.5px;
+  padding-top: 75px;
 }
 
 .header__theme-menu-button {
@@ -110,7 +113,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
-  margin: 0px 10px;
+  margin: 55px 10px 0;
+  justify-self: center;
+  align-self: start;
   }
 
 .subtitle {
@@ -120,11 +125,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  position: absolute;
-  top: 485px;
   padding: 0;
-  margin: 0 10px;
-  display: inline;
+  margin: 55px 10px 0;
+  align-self: start;
 }
 
 .title-decor {
@@ -272,17 +275,19 @@
     right: 26px;
   }
   .header__theme-menu {
-    top: 190px;
-    right: 23px;
+    margin-top: 117px;
+    margin-right: 10px;
   }
   .header__title {
-    margin: 0;
+    margin: 163px 0 0;
+    justify-self: start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .subtitle {
-    top: 724px;
+    justify-self: end;
+    margin-right: 20px;
     max-width: 364px;
-    right: 12px;
+    margin-top: 161px;
   }
 
   .section {
@@ -376,26 +381,31 @@
 
 @media (width >= 1024px) {
   .header__theme-menu {
-    position: absolute;
-    top: 18px;
-    right: 400px;
+    margin-right: 385px;
+    margin-top: 18px;
+    padding-top: 0;
   }
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 11px;
   }
    .header {
     min-height: 768px;
   }
+
+  .header__title {
+    margin-top: 265px;
+  }
+
   .subtitle {
-    top: 563px;
+    margin-top: 115px;
     max-width: 491px;
-    right: 10px;
+    margin-right: 20px;
   }
   .section:nth-child(1),
   .section:nth-child(3) {
-    gap:13px;
+    gap:12px;
   }
   .section:nth-child(2) .section__title {
     max-width: 315px;
